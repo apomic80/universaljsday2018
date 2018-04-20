@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+import { EventsComponent } from './events/events.component';
+
+import { NgxElectronModule } from 'ngx-electron';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    EventsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, NgxElectronModule
   ],
   providers: [],
   bootstrap: [AppComponent]
